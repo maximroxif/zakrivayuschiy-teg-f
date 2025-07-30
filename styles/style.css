@@ -68,6 +68,7 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 1 / 1;
 }
 
 .card__label {
@@ -165,6 +166,7 @@
   border: 2px solid transparent;
   padding: 0;
   background-color: transparent;
+  transition: border-color 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -228,31 +230,31 @@
   text-transform: uppercase;
 }
 
-.card__image--fresh-start {
+.filter-saturate {
   filter: saturate(30%);
 }
 
-.card__image--doubt {
+.filter-brightness {
   filter: brightness(100%) saturate(460%) hue-rotate(0deg);
 }
 
-.card__image--perfection {
+.filter-hue-rotate {
   filter: hue-rotate(30deg);
 }
 
-.card__image--community {
+.filter-invert {
   filter: invert(500%) brightness(100%) contrast(55%);
 }
 
-.card__image--nostalgia {
+.filter-sepia {
   filter: sepia(80%) brightness(90%) contrast(110%);
 }
 
-.card__image--hands-down {
+.filter-blur {
   filter: blur(15px);
 }
 
-.card__image--present {
+.filter-mix {
   filter: sepia(45%) hue-rotate(90deg) brightness(95%) contrast(60%)
   saturate(250%) blur(1.3px);
 }
